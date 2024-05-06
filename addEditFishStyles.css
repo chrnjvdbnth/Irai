@@ -1,0 +1,91 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Container styling */
+.container {
+    width: 400px; /* Width of the container */
+    padding: 20px; /* Padding inside the container */
+    background-color: white; /* White background for container */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align elements inside the container */
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Spacing below heading */
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333; /* Dark gray color */
+}
+
+/* Input styling */
+input.number-input,
+input.date-input,
+select {
+    width: 100%; /* Full width of the container */
+    padding: 8px;
+    margin-bottom: 12px; /* Space between inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+/* Date input styling */
+.date-input {
+    position: relative;
+    padding-right: 40px; /* Increase right padding for the icon */
+    background-image: url('calendar-icon.png'); /* Use your icon image URL */
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Position icon on the right */
+    cursor: pointer; /* Show cursor pointer on hover */
+}
+
+/* Error styling */
+input.number-input.invalid {
+    border-color: red; /* Red border */
+    background-color: #ffe5e5; /* Light red background */
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 12px;
+    display: block; /* Initially hidden */
+}
+
+/* Button styling */
+#submit-button {
+    width: 100%; /* Full width of the container */
+    padding: 12px;
+    background-color: #4CAF50; /* Green color */
+    color: white; /* White text */
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Button hover styling */
+#submit-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
